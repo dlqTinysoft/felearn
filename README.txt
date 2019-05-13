@@ -4,14 +4,16 @@ https://www.jianshu.com/p/d9c998911561
 
 
 
-==================================webpack安装步骤================================
+==================================webpack安装步骤,使用webpack1.15.0 新版本会有点问题================================
 
 1.安装node.js和npm,一般node.js会自带npm。 node.js安装比较简单。
 
 2.安装webpack
-    npm install webpack@3.8.0 -g ##全局安装，3.8.0为指定webpakc版本
+    npm install webpack@1.15.0 -g ##全局安装，3.8.0为指定webpakc版本
+    ###npm install wepack-cli -g ##全局安装webpack-cli webpack4.0以上版本需要依赖webpack-cli
     npm install webpack-dev-server@2.9.7 -g
-    npm install webpack@3.8.0 --save-dev  ##局部安装wbpack
+    npm install webpack@1.15.0 --save-dev  ##局部安装wbpack
+    ##npm install webpack-cli --save-dev ###webpack4.0以上需要webpack-cli
     npm install webpack-dev-server@2.9.7 --save-dev ##局部安装
 
     卸载webpack:  npm uninstall webpack -g
@@ -227,4 +229,35 @@ https://www.jianshu.com/p/d9c998911561
             }
 
         然后执行 npm run dev 命令  等同于执行命令：WEBPACK_ENV=dev webpack-dev-server --inline --port 8088
+
+================================================================项目开发======================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
