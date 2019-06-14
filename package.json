@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "dddldl",
   "main": "webpack.config.js",
-  "dependencies": {},
+  "dependencies": {
+    "hogan": "^1.0.2"
+  },
   "devDependencies": {
     "css-loader": "^2.1.1",
     "extract-text-webpack-plugin": "^1.0.1",

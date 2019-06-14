@@ -1,12 +1,12 @@
-/*var $ = require('jquery');*/
 
-/*$('body').html('HELLO INDEx');*/
-/*
-var $$ = require('jquery');
-$$('body').html("index hello ...........dsddddd")
-console.log("hello index ....");*/
-
-require('../module.js');
-require('./index.css');
-console.log("hello indexdddddddd ....");
-console.log("dlq");
+var _mm = require('../../util/mm.js');
+_mm.request({
+    url: 'http://localhost:8080/getOrder',
+    method: 'post',
+    success : function(msg){
+        console.log(msg.orderName);
+    },
+    error : function (res) {
+        console.log(res.orderName);
+    }
+})

@@ -30,8 +30,9 @@ var config = {
     /*entry为需要打包的模块*/
     entry: {
         'common'            : ['./src/page/common/index.js'],
-        'index'               : ['./src/page/index/index.js'],
-        'login'               : ['./src/page/login/index.js'],
+        /*'index'               : ['./src/page/index/index.js'],*/
+      /*  'login'               : ['./src/page/login/index.js'],*/
+       /* 'mm'                  : ['./src/util/mm.js'],*/
         /*'list'              : ['./src/page/list/index.js'],
         'detail'            : ['./src/page/detail/index.js'],
         'cart'              : ['./src/page/cart/index.js'],
@@ -62,7 +63,8 @@ var config = {
             { test: /\.string$/, loader: 'html-loader'}
         ]
     },
-   /* resolve : {
+    /*配置路径别名*/
+    resolve : {
         alias : {
             node_modules    : __dirname + '/node_modules',
             util            : __dirname + '/src/util',
@@ -70,13 +72,13 @@ var config = {
             service         : __dirname + '/src/service',
             image           : __dirname + '/src/image'
         }
-    },*/
+    },
     plugins: [
-        // 独立通用模块到js/base.js
+       /* // 独立通用模块到js/base.js
         new webpack.optimize.CommonsChunkPlugin({
             name : 'common',
             filename : 'js/base.js'
-        }),
+        }),*/
         // 把css单独打包到文件里
         new ExtractTextPlugin("css/[name].css"),
         // html模板的处理

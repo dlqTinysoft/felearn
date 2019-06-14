@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<%= require('html-loader!./layout/html-head.html')%>
+<head>
+ <%= require('html-loader!./layout/head-common.html')  %>
+ <title><%= htmlWebpackPlugin.options.title%> - happymmall电商平台</title>
+</head>
 <body>
 <!--引入打包的js-->
 
 
  <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 
-   <h1>我是董乐强</h1>
+  <h1>我是董乐强</h1>
 
-  <h2>webpack就是厉害呀  就是厉害呀</h2>
 
+<%= require('html-loader!./layout/footer.html')  %>
 
 </body>
 </html>

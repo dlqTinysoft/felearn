@@ -1,2 +1,1 @@
-
-console.log('i am gloabl');
+require('./layout.css');

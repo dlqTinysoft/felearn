@@ -239,7 +239,10 @@ https://www.jianshu.com/p/d9c998911561
 
 
 第一，通用工具类(js)
-
+    渲染html,需要安装hogan模块
+     npm install hogan --save
+     安装图标awesome
+     npm install font-awesome --save
 
 
 第二，做网页最低要求
